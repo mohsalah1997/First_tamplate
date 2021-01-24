@@ -1,0 +1,149 @@
+.App {
+  width: 85%;
+  margin: 0 auto;
+}
+.navbar {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.navbar li {
+  color: rgb(116, 111, 111);
+}
+.navbar li:hover {
+  color: burlywood;
+}
+.navbar__logo {
+  width: 8rem;
+  height: 2rem;
+  margin-top: -0.5rem;
+}
+
+.content {
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content div {
+  margin: 2rem;
+}
+
+.content_img {
+  border-radius: 50%;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.content button {
+  background-color: white;
+  border: 1.5px solid black;
+  width: 50%;
+  height: 4vh;
+  display: block;
+}
+.left-h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.left h1 {
+  margin: 0 auto;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.body {
+  height: 80vh;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  margin-top: 2rem;
+}
+
+.body-top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.body_img {
+  width: 100%;
+}
+
+.body-buttom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  flex-wrap: nowrap;
+}
+.contact {
+  height: 25vh;
+  width: 15%;
+}
+
+.footar {
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .right {
+    display: none;
+  }
+  .navbar li {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    border-bottom-style: solid;
+  }
+
+  .left {
+    padding-left: 2rem;
+  }
+  .body-top {
+    flex-direction: column;
+  }
+
+  .body-buttom {
+    flex-direction: column;
+  }
+  .body {
+    height: 130vh;
+  }
+  .contact {
+    height: 30vh;
+    width: 50%;
+  }
+  .navbar-li:nth-of-type(7) {
+    order: 1;
+  }
+  .navbar-li:nth-of-type(1) {
+    order: 2;
+  }
+  .navbar-li:nth-of-type(2) {
+    order: 3;
+  }
+  .navbar-li:nth-of-type(3) {
+    order: 4;
+  }
+  .navbar-li:nth-of-type(4) {
+    order: 5;
+  }
+  .navbar-li:nth-of-type(5) {
+    order: 6;
+  }
+  .navbar-li:nth-of-type(6) {
+    order: 7;
+  }
+}
